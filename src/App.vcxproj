@@ -113,7 +113,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\logix\Desktop\code_\libs\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\logix\Desktop\code_\libs\include;C:\Users\logix\Desktop\code_\libs\include\cinder-0.9.1</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -185,7 +185,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\logix\Desktop\code_\libs\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\logix\Desktop\code_\libs\include;C:\Users\logix\Desktop\code_\libs\include\cinder-0.9.1</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -209,7 +209,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>libfftw3f-3.lib;cinder.lib;opencv_core400.lib;opencv_highgui400.lib;opencv_videoio400.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\logix\Desktop\code_\libs\lib64;C:\Users\logix\Desktop\code_\libs\lib64\Release;$(TargetDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\logix\Desktop\code_\libs\lib64;C:\Users\logix\Desktop\code_\libs\lib64\Release;C:\Users\logix\Desktop\code_\libs\lib64\Release\cinder-0.9.1;$(TargetDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <GenerateMapFile>true</GenerateMapFile>
       <SubSystem>Windows</SubSystem>

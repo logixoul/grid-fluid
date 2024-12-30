@@ -3,156 +3,38 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="precompiled.cpp" />
-    <ClCompile Include="lxlib\Array2D_imageProc.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\cfg1.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\colorspaces.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\ConcurrentQueue.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\CrossThreadCallQueue.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\cvstuff.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\easyfft.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\events.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\Fbo.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\gpgpu.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\gpuBlur2_5.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\MyTimer.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\MyVideoWriter.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\qdebug.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\RenderDoc.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\shade.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\simplexnoise.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\stefanfw.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\stuff.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\sw.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\System.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\TextureCache.cpp">
-      <Filter>lxlib</Filter>
-    </ClCompile>
-    <ClCompile Include="lxlib\util.ixx">
-      <Filter>lxlib</Filter>
-    </ClCompile>
+    <ClCompile Include="Array2D_imageProc.cpp" />
+    <ClCompile Include="ConcurrentQueue.cpp" />
+    <ClCompile Include="Constants.cpp" />
+    <ClCompile Include="CrossThreadCallQueue.cpp" />
+    <ClCompile Include="cvstuff.cpp" />
+    <ClCompile Include="easyfft.cpp" />
+    <ClCompile Include="events.cpp" />
+    <ClCompile Include="gpgpu.cpp" />
+    <ClCompile Include="colorspaces.cpp" />
+    <ClCompile Include="cfg1.cpp" />
+    <ClCompile Include="MyTimer.cpp" />
+    <ClCompile Include="gpuBlur2_5.cpp" />
+    <ClCompile Include="shade.cpp" />
+    <ClCompile Include="simplexnoise.cpp" />
+    <ClCompile Include="stefanfw.cpp" />
+    <ClCompile Include="stuff.cpp" />
+    <ClCompile Include="sw.cpp" />
+    <ClCompile Include="TextureCache.cpp" />
+    <ClCompile Include="util.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="precompiled.h" />
-    <ClInclude Include="lxlib\Array2D_imageProc.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\bicubic.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\cfg1.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\colorspaces.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\ConcurrentQueue.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\CrossThreadCallQueue.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\cvstuff.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\easyfft.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\events.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\Fbo.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\gpgpu.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\gpuBlur2_5.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\macros.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\MyTimer.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\MyVideoWriter.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\qdebug.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\RenderDoc.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\renderdoc_app.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\shade.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\simplexnoise.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\stefanfw.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\stuff.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\sw.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\System.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\TextureCache.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
-    <ClInclude Include="lxlib\using_namespace.h">
-      <Filter>lxlib</Filter>
-    </ClInclude>
+    <ClInclude Include="easyfft.h" />
+    <ClInclude Include="gpgpu.h" />
+    <ClInclude Include="gpuBlur2_5.h" />
+    <ClInclude Include="shade.h" />
+    <ClInclude Include="simplexnoise.h" />
+    <ClInclude Include="stefanfw.h" />
+    <ClInclude Include="stuff.h" />
+    <ClInclude Include="sw.h" />
+    <ClInclude Include="TextureCache.h" />
+    <ClInclude Include="util.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="hcl_lib.fs" />

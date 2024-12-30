@@ -13,8 +13,8 @@
 #include "util.h"
 
 typedef Array2D<float> Image;
-int wsx = 400, wsy = 400;
-int scale = 4;
+int wsx = 800, wsy = 800;
+int scale = 5;
 int sx = wsx / ::scale;
 int sy = wsy / ::scale;
 ivec2 sz(sx, sy);
@@ -144,7 +144,7 @@ struct SApp : ci::app::App {
 			[&]() { return mix(1.0, 8.0, mouseY); });
 		float bloomIntensity = cfg1::getOpt("bloomIntensity", 0.2f,
 			[&]() { return keys['i']; },
-			[&]() { return mix(0.1, 8.0, mouseY); });
+			[&]() { return mix(0.1, 1.0, mouseY); });
 		auto redTexB = gpuBlur2_5::run_longtail(redTex, bloomIters, bloomSize);
 		auto greenTexB = gpuBlur2_5::run_longtail(greenTex, bloomIters, bloomSize);
 
@@ -287,7 +287,7 @@ struct SApp : ci::app::App {
 					vec2 v = vec2(x, y) - scaledm;
 					float w = std::max(0.0f, 1.0f - length(v) / r);
 					w = 3 * w * w - 2 * w * w * w;
-					material->img.wr(x, y) += 1.f * w *10.0;
+					material->img.wr(x, y) += 1.f * w *100.0;
 				}
 			}
 		}
@@ -312,7 +312,7 @@ struct SApp : ci::app::App {
 	}
 
 	void doFluidStep() {
-		surfTensionThres = cfg1::getOpt("surfTensionThres", .04f,
+		surfTensionThres = cfg1::getOpt("surfTensionThres", 1.5f,
 			[&]() { return keys['6']; },
 			[&]() { return expRange(mouseY, 0.1f, 50000.0f); });
 		auto surfTension = cfg1::getOpt("surfTension", 1.0f,
@@ -323,7 +323,7 @@ struct SApp : ci::app::App {
 			[&]() { return expRange(mouseY, .0001f, 40000.0f); });
 		auto incompressibilityCoef = cfg1::getOpt("incompressibilityCoef", 1.0f,
 			[&]() { return keys['/']; },
-			[&]() { return expRange(mouseY, .0001f, 40000.0f); });
+			[&]() { return expRange(mouseY, .01f, 40.0f); });
 
 
 		//for (int i = 0; i < 4; i++) {
